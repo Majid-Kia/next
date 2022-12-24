@@ -1,0 +1,98 @@
+.h1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  color: $text-primary;
+  @include for-size(tablet-down) {
+    font-size: 42px;
+    line-height: 55px;
+    font-weight: 500;
+  }
+  @include for-size(phone-only) {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 600;
+  }
+}
+
+.h2 {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 55px;
+  @include for-size(tablet-down) {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  @include for-size(phone-only) {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+.h5 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+.h6 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  @include for-size(phone-only) {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+  }
+}
+
+.btn-large {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
+}
+.btn-small {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.46px;
+}
+.subtitle-1 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+.subtitle-2 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+.body-1 {
+  font-size: 16px;
+  line-height: 24px;
+}
+.body-2 {
+  font-size: 14px;
+  line-height: 22px;
+}
+.semi-bold {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+}
+.text--secondary {
+  color: $text-secondary;
+}
+.text--primary {
+  color: $text-primary;
+}
+.text--primary-main {
+  color: $primary;
+}
+.text--grey-400 {
+  color: $grey-400;
+}
+.text--white {
+  color: $white;
+}
+.text--grey-A400 {
+  color: $grey-A400;
+}

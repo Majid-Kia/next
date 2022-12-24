@@ -1,0 +1,66 @@
+.nowCloud {
+  margin-top: 150px;
+  @include for-size(tablet-down) {
+    margin-top: 100px;
+  }
+}
+.now-title {
+  margin-bottom: 32px;
+}
+
+.now-img {
+  width: 58%;
+  @include for-size(tablet-down) {
+    width: 100%;
+  }
+}
+
+.now-description {
+  width: 42%;
+  padding-left: 24px;
+  @include for-size(tablet-down) {
+    width: 100%;
+  }
+}
+
+.features {
+  margin-top: 16px;
+  align-items: flex-end;
+  @include for-size(phone-only) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  ul {
+    flex-grow: 1;
+    @include for-size(tablet-down) {
+      display: flex;
+      flex-wrap: wrap;
+      flex-grow: 0;
+      width: calc(100% - 151px);
+    }
+    @include for-size(phone-only) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    li {
+      margin-top: 12px;
+      @include for-size(tablet-down) {
+        width: 50%;
+        margin-top: 0;
+        &:nth-child(n + 3) {
+          margin-top: 12px;
+        }
+      }
+      @include for-size(small-phone) {
+        width: 100%;
+        margin-top: 12px;
+      }
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    span {
+      margin-left: 8px;
+    }
+  }
+}

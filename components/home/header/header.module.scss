@@ -1,0 +1,90 @@
+.header {
+  margin-top: 100px;
+  @include for-size(tablet-down) {
+    margin-top: 48px;
+  }
+  @include for-size(phone-only) {
+    margin-top: 32px;
+  }
+}
+.header-description {
+  width: 45%;
+  padding-top: 90px;
+  @include for-size(laptop-down) {
+    width: 40%;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @include for-size(tablet-down) {
+    width: 100%;
+  }
+  h1,
+  p {
+    @include for-size(tablet-down) {
+      text-align: center;
+    }
+  }
+  p {
+    @include for-size(phone-only) {
+      margin-top: 28px;
+    }
+  }
+}
+
+.header-img {
+  width: 55%;
+  position: relative;
+  @include for-size(laptop-down) {
+    width: 60%;
+  }
+  @include for-size(tablet-down) {
+    width: 100%;
+    margin-top: 42px;
+  }
+}
+
+.feature {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: $white;
+  bottom: 50px;
+  box-shadow: 1px 3px 10px 2px rgba(45, 49, 166, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  @include for-size(laptop-down) {
+    padding: 16px;
+  }
+
+  ul {
+    @include for-size(tablet-down) {
+      justify-content: space-between;
+    }
+    @include for-size(phone-only) {
+      width: 100%;
+      overflow-x: auto;
+    }
+    li {
+      flex-direction: column;
+      margin-right: 24px;
+
+      @include for-size(laptop-down) {
+        margin-right: 12px;
+      }
+      @include for-size(phone-only) {
+        margin-right: 24px;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      span {
+        @include for-size(phone-only) {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}

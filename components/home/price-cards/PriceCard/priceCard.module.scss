@@ -1,0 +1,77 @@
+.price-card {
+  flex-direction: column;
+  width: calc(25% - 15px);
+  padding: 24px 20px;
+  margin-left: 20px;
+  &.active {
+    background-color: $primary;
+    > span {
+      color: $white;
+    }
+    ul {
+      li {
+        span {
+          color: $white;
+        }
+      }
+    }
+    .price-info {
+      div {
+        color: #fff;
+      }
+      span {
+        color: #fff;
+      }
+    }
+  }
+  &:first-child {
+    margin-left: 0;
+  }
+  @include for-size(laptop-down) {
+    width: calc(50% - 15px);
+    margin-left: 0;
+    &:nth-child(2n) {
+      margin-left: 20px;
+    }
+    &:nth-child(n + 3) {
+      margin-top: 20px;
+    }
+  }
+  @include for-size(phone-only) {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 16px;
+    &:nth-child(2n) {
+      margin-left: 0;
+    }
+    &:nth-child(n + 3) {
+      margin-top: 16px;
+    }
+  }
+  ul {
+    margin: 24px 0;
+    li {
+      margin-top: 12px;
+      &:first-child {
+        margin-top: 0;
+      }
+      svg {
+        margin-right: 12px;
+      }
+      span {
+        &:last-child {
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+}
+
+.price-info {
+  margin-top: 22px;
+}
+
+.get-btn {
+  margin-top: 24px;
+  padding: 8px 18px;
+}

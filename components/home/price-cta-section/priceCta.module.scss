@@ -1,0 +1,43 @@
+.price-cta-card {
+    background-image: url('../../../images/home/price-cta-section/price-cta-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 46px 64px;
+    border-radius: 12px;
+    margin-top: 150px;
+    @include for-size(tablet-down) {
+        background-image: url('../../../images/home/price-cta-section/price-cta-sm-background.jpg');
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    @include for-size(small-phone) {
+        background-image: url('../../../images/home/price-cta-section/price-cta-xs-background.jpg');
+    }
+        
+}
+
+.price-cta-title-and-content {
+    width: 60%;
+    @include for-size(tablet-down) {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.price-cta-title{
+    margin-bottom: 16px;
+    @include for-size(tablet-down) {
+        margin-bottom: 8px;
+    }
+}
+
+.priceCtaAction {
+    Button {
+    @include for-size(tablet-down) {
+            padding: 6px 130px;
+        }
+    }
+}
