@@ -4,11 +4,10 @@ import Image from "next/image";
 import headerImg from "../../../images/home/home-header.webp";
 import styles from "./header.module.scss";
 import ArrowDown from "../../../components/icons/ArrowDown";
-
 const Header = () => {
   return (
     <div className={`w-100 flex flex-wrap ${styles.header}`}>
-      <div className={styles.headerDescription}>
+      <div className={styles["header-description"]}>
         <h1 className="h1">Cloudzy, Premium VPS Hosting Since 2008!</h1>
         <span className="text-3xl font-bold underline">Hello world!</span>
         <p className="mt-40 h6 text--secondary">
@@ -24,7 +23,7 @@ const Header = () => {
           <ArrowDown color="#fff" />
         </Button>
       </div>
-      <div className={`${styles.headerImg} flex-c`}>
+      <div className={`${styles["header-img"]} flex-c`}>
         <Image src={headerImg} alt="cloudzy home" />
         <div className={styles.feature}>
           <ul className="flex">
