@@ -19,7 +19,7 @@ const PriceCards = () => {
           </button>
         ))}
       </div>
-      <div className={`${styles.priceCards} flex flex-wrap w-100`}>
+      <div className={`${styles["price-cards"]} flex flex-wrap w-100`}>
         <PriceCard />
         <PriceCard />
         <PriceCard active={true} />

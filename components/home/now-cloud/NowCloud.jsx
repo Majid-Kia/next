@@ -6,14 +6,14 @@ import CircleDone from "../../../components/icons/CircleDone";
 import cloud from "../../../images/home/now-cloud/now-cloud.png";
 const NowCloud = () => {
   return (
-    <div className={`flex flex-wrap ${styles.nowCloud}`}>
-      <div className={`w-100 ${styles.nowTitle} flex-j-c`}>
+    <div className={`flex flex-wrap ${styles["now-cloud"]}`}>
+      <div className={`w-100 ${styles["now-title"]} flex-j-c`}>
         <h2 className="h2 text--primary">Now Cloud!</h2>
       </div>
-      <div className={styles.nowImg}>
+      <div className={styles["now-img"]}>
         <Image src={cloud} width={900} height={550} alt="now cloud" />
       </div>
-      <div className={styles.nowDescription}>
+      <div className={styles["now-description"]}>
         <p className="body-1 text--secondary">
           We are proud to say that Cloudzy is now beyond the cloud! Launching
           our new special product, The Cloud, we guarantee you a seamless

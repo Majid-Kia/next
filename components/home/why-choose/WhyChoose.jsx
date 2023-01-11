@@ -8,7 +8,7 @@ import styles from "./whyChoose.module.scss";
 
 const WhyChoose = () => {
   return (
-    <div className={`${styles.whyChoose} mt-150`}>
+    <div className={`${styles["why-choose"]} mt-150`}>
       <div className="container">
         <div className="why-choose__title flex-a-c justify-space-between ">
           <h2 className="h2 text--primary">Why Choose Us?</h2>
@@ -20,9 +20,9 @@ const WhyChoose = () => {
             <ArrowRight color="#fff" />
           </Button>
         </div>
-        <div className={`${styles.whyChoose__items} flex flex-wrap w-100`}>
-          <div className={`${styles.whyChoose__item}`}>
-            <div className={`${styles.cardTitle} flex flex-a-c`}>
+        <div className={`${styles["why-choose__items"]} flex flex-wrap w-100`}>
+          <div className={`${styles["why-choose__item"]}`}>
+            <div className={`${styles["card-title"]} flex flex-a-c`}>
               <Image src={card} alt="card" />
               <span className="h5 text--primary">Affordable</span>
             </div>
@@ -32,8 +32,8 @@ const WhyChoose = () => {
               top-tier infrastructure, starting at only $7.95!
             </p>
           </div>
-          <div className={`${styles.whyChoose__item}`}>
-            <div className={`${styles.cardTitle} flex flex-a-c`}>
+          <div className={`${styles["why-choose__item"]}`}>
+            <div className={`${styles["card-title"]} flex flex-a-c`}>
               <Image src={card} alt="server" />
               <span className="h5 text--primary">High-Performance</span>
             </div>
@@ -43,8 +43,8 @@ const WhyChoose = () => {
               to experience the highest performance possible!
             </p>
           </div>
-          <div className={`${styles.whyChoose__item}`}>
-            <div className={`${styles.cardTitle} flex flex-a-c`}>
+          <div className={`${styles["why-choose__item"]}`}>
+            <div className={`${styles["card-title"]} flex flex-a-c`}>
               <Image src={card} alt="lock" />
               <span className="h5 text--primary">Safe and Secure</span>
             </div>
@@ -54,8 +54,8 @@ const WhyChoose = () => {
               technical support team at your service, and DDoS protection.
             </p>
           </div>
-          <div className={`${styles.whyChoose__item}`}>
-            <div className={`${styles.cardTitle} flex flex-a-c`}>
+          <div className={`${styles["why-choose__item"]}`}>
+            <div className={`${styles["card-title"]} flex flex-a-c`}>
               <Image src={card} alt="bitcoin" />
               <span className="h5 text--primary">Flexible Payment</span>
             </div>
@@ -65,8 +65,8 @@ const WhyChoose = () => {
               Ethereum, Monero, and also PayPal, Mastercard, Visa, and more.
             </p>
           </div>
-          <div className={`${styles.whyChoose__item}`}>
-            <div className={`${styles.cardTitle} flex flex-a-c`}>
+          <div className={`${styles["why-choose__item"]}`}>
+            <div className={`${styles["card-title"]} flex flex-a-c`}>
               <Image src={card} alt="fast" />
               <span className="h5 text--primary">Fast Setup</span>
             </div>
@@ -76,8 +76,8 @@ const WhyChoose = () => {
               and applications for your VPS for a more seamless setup.
             </p>
           </div>
-          <div className={`${styles.whyChoose__item}`}>
-            <div className={`${styles.cardTitle} flex flex-a-c`}>
+          <div className={`${styles["why-choose__item"]}`}>
+            <div className={`${styles["card-title"]} flex flex-a-c`}>
               <Image src={card} alt="dollar" />
               <span className="h5 text--primary">Full Refund</span>
             </div>

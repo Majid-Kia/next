@@ -9,7 +9,6 @@ import Button from "../../components/buttons/Button";
 
 const Navbar = () => {
   const [openNav, setOpenNav] = useState(false);
-  console.log(styles);
   return (
     <nav className={styles.nav}>
       <div className={`container flex-a-c ${styles["nav-wrapper"]}`}>

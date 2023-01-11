@@ -7,7 +7,9 @@ import windows from "../../../../images/home/price-cards/windows.png";
 const PriceCard = ({ active }) => {
   return (
     <div
-      className={`${styles.priceCard} flex card ${active ? styles.active : ""}`}
+      className={`${styles["price-card"]} flex card ${
+        active ? styles.active : ""
+      }`}
     >
       <span className="text--primary-main  subtitle-1">BASIC</span>
       <ul>
@@ -41,7 +43,7 @@ const PriceCard = ({ active }) => {
         </li>
       </ul>
       <hr />
-      <div className={styles.priceInfo}>
+      <div className={styles["price-info"]}>
         <div className="flex-a-c justify-space-between">
           <div className="semi-bold  text--primary ">
             <span className="h5">$</span>
@@ -58,7 +60,7 @@ const PriceCard = ({ active }) => {
         </div>
       </div>
       <Button
-        className={`${styles.getBtn} btn-large text--white`}
+        className={`${styles["get-btn"]} btn-large text--white`}
         text="get started"
         type={active ? "secondary" : "primary-outline"}
       />
